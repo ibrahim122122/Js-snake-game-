@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Snake (Upgraded)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="title">Snake</div>
+        <div class="subtitle">Keyboard controls • Smooth play • Better UX</div>
+      </div>
+
+      <div class="hud">
+        <div class="hud-row">
+          <div class="pill"><span class="label">Score</span><span id="score">0</span></div>
+          <div class="pill"><span class="label">Best</span><span id="best">0</span></div>
+        </div>
+        <div class="hud-row">
+          <div class="pill"><span class="label">Speed</span><span id="speed">1</span>x</div>
+          <div class="pill"><span class="label">Mode</span><span id="mode">Classic</span></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="panel">
+        <div class="canvas-wrap">
+          <canvas id="game" width="720" height="720" aria-label="Snake game" role="img"></canvas>
+          <div id="overlay" class="overlay" aria-live="polite">
+            <div class="overlay-card">
+              <h2 id="overlay-title">Snake</h2>
+              <p id="overlay-text">Press <b>Enter</b> to start</p>
+              <div class="controls">
+                <div><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> Move</div>
+                <div><kbd>Enter</kbd> Start / Restart</div>
+                <div><kbd>P</kbd> Pause</div>
+                <div><kbd>1</kbd> Classic • <kbd>2</kbd> Speedy</div>
+              </div>
+              <div class="overlay-actions">
+                <button id="btnStart" class="primary">Start</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <button id="btnPause" class="ghost">Pause</button>
+          <button id="btnMode" class="ghost">Toggle mode</button>
+          <button id="btnReset" class="ghost">Reset best</button>
+        </div>
+      </section>
+
+      <aside class="side">
+        <h3>Upgrades</h3>
+        <ul>
+          <li>Smooth input buffering (no missed turns)</li>
+          <li>Pause/resume, start/restart overlay</li>
+          <li>Responsive visuals + crisp grid rendering</li>
+          <li>Persistent best score (localStorage)</li>
+          <li>Two modes with different pacing</li>
+        </ul>
+        <div class="tip">
+          Tip: Hold a direction and tap to chain turns—input is buffered.
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
