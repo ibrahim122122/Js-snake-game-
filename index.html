@@ -10,8 +10,8 @@
   <div class="app">
     <header class="topbar">
       <div class="brand">
-        <div class="title">🐍 Snake</div>
-        <div class="subtitle">Ultimate Enhanced Edition • Multiple Modes • Power-ups</div>
+        <div class="title">Snake</div>
+        <div class="subtitle">Keyboard controls • Smooth play • Better UX</div>
       </div>
 
       <div class="hud">
@@ -35,95 +35,36 @@
               <h2 id="overlay-title">Snake</h2>
               <p id="overlay-text">Press <b>Enter</b> to start</p>
               <div class="controls">
-                <div><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></div>
+                <div><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> Move</div>
                 <div><kbd>Enter</kbd> Start / Restart</div>
-                <div><kbd>P</kbd> Pause / Resume</div>
-                <div><kbd>1</kbd> Classic • <kbd>2</kbd> Speedy • <kbd>3</kbd> Zen • <kbd>4</kbd> Hardcore</div>
+                <div><kbd>P</kbd> Pause</div>
+                <div><kbd>1</kbd> Classic • <kbd>2</kbd> Speedy</div>
               </div>
               <div class="overlay-actions">
-                <button id="btnStart" class="primary">Start Game</button>
+                <button id="btnStart" class="primary">Start</button>
               </div>
             </div>
           </div>
         </div>
 
         <div class="footer">
-          <button id="btnPause" class="ghost">⏸ Pause</button>
-          <button id="btnMode" class="ghost">🎮 Toggle Mode</button>
-          <button id="btnReset" class="ghost">🔄 Reset Best</button>
+          <button id="btnPause" class="ghost">Pause</button>
+          <button id="btnMode" class="ghost">Toggle mode</button>
+          <button id="btnReset" class="ghost">Reset best</button>
         </div>
       </section>
 
       <aside class="side">
-        <div class="side-section">
-          <h3>🎮 Game Modes</h3>
-          <div class="mode-list">
-            <div class="mode-item">
-              <span class="mode-name">Classic</span>
-              <span class="mode-desc">Standard gameplay (1x)</span>
-            </div>
-            <div class="mode-item">
-              <span class="mode-name">Speedy</span>
-              <span class="mode-desc">Fast pace (1.5x)</span>
-            </div>
-            <div class="mode-item">
-              <span class="mode-name">Zen</span>
-              <span class="mode-desc">Relaxed play (0.8x)</span>
-            </div>
-            <div class="mode-item">
-              <span class="mode-name">Hardcore</span>
-              <span class="mode-desc">Ultimate challenge (2x)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="side-section">
-          <h3>🍎 Food Types</h3>
-          <div class="food-legend">
-            <div class="food-item">
-              <div class="food-dot red"></div>
-              <div class="food-info">
-                <div class="food-name">Normal</div>
-                <div class="food-value">+10 pts</div>
-              </div>
-            </div>
-            <div class="food-item">
-              <div class="food-dot orange"></div>
-              <div class="food-info">
-                <div class="food-name">Speed</div>
-                <div class="food-value">+25 pts ⚡</div>
-              </div>
-            </div>
-            <div class="food-item">
-              <div class="food-dot gold"></div>
-              <div class="food-info">
-                <div class="food-name">Bonus</div>
-                <div class="food-value">+50 pts ✨</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="side-section">
-          <h3>✨ Features</h3>
-          <ul class="features-list">
-            <li>Input buffering for smooth controls</li>
-            <li>4 unique game modes</li>
-            <li>Multiple food types with effects</li>
-            <li>Persistent best score</li>
-            <li>Pause/Resume functionality</li>
-            <li>Responsive dark modern UI</li>
-          </ul>
-        </div>
-
-        <div class="side-section">
-          <h3>💡 Pro Tips</h3>
-          <div class="tips-box">
-            <p><strong>• Use Wraparound:</strong> Exit one side and enter the other!</p>
-            <p><strong>• Input Buffering:</strong> Pre-input your next move for smoother gameplay</p>
-            <p><strong>• Speed Challenge:</strong> Try Speedy mode for more points</p>
-            <p><strong>• No Pause In Hardcore:</strong> Hone your skills under pressure</p>
-          </div>
+        <h3>Upgrades</h3>
+        <ul>
+          <li>Smooth input buffering (no missed turns)</li>
+          <li>Pause/resume, start/restart overlay</li>
+          <li>Responsive visuals + crisp grid rendering</li>
+          <li>Persistent best score (localStorage)</li>
+          <li>Two modes with different pacing</li>
+        </ul>
+        <div class="tip">
+          Tip: Hold a direction and tap to chain turns—input is buffered.
         </div>
       </aside>
     </main>
